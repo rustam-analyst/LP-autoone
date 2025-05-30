@@ -1,0 +1,12 @@
+{
+  "name": "landing",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "script.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}

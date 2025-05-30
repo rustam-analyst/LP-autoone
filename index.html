@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис "AvtoOne" | Ремонт авто в Екатеринбурге</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="https://placehold.co/120x40" alt="Гараж 42" width="120">
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+                    <button type="button" class="btn btn--small" data-open-modal>Записаться</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <h1>Профессиональный ремонт авто с гарантией</h1>
+                    <p class="subtitle">Быстро, качественно, дорого</p>
+                    
+                    <!-- <form class="booking-form" id="form">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Ваш телефон" required>
+                        <button type="submit" class="btn">Оставить заявку</button>
+                    </form> -->
+
+                    <!-- <div class="features">
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Бесплатная диагностика</span>
+                        </div>
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Оригинальные запчасти</span>
+                        </div>
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Выездной ремонт</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="hero__image">
+                    <img src="https://avatars.mds.yandex.net/get-altay/15185043/2a0000019690167b5d8122c4f63507982dfd/XXXL" alt="Ремонт автомобиля">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Ремонт двигателя</h3>
+                    <p>Диагностика и ремонт любой сложности</p>             
+                </div>
+                <div class="service-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена масла</h3>
+                    <p>Быстро и с гарантией</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Ремонт подвески</h3>
+                    <p>Комплексная диагностика</p>
+                </div>
+                <!-- Добавьте остальные услуги -->
+            </div>
+            <div class="service-footer">
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена ремня грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена цепи грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена ебала грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Дешевое масло</h3>
+                </div><div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Дорогое масло</h3>
+                </div><div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Ссанина</h3>
+                </div>
+            </div>
+        </div>
+        <fieldset>
+            <legend>Select a drone:</legend>
+          
+            <div>
+              <input type="radio" id="huey" name="drone" value="huey" checked />
+              <label for="huey">Герань</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="dewey" name="drone" value="dewey" />
+              <label for="dewey">Гойда</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="louie" name="drone" value="louie" />
+              <label for="louie">Гоол</label>
+            </div>
+          </fieldset>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__inner">
+                <h2>Оставьте заявку – мы перезвоним за 15 минут!</h2>
+                <form class="cta-form">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <button type="submit" class="btn">Жду звонка</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h3>Контакты</h3>
+                    <p>Екатеринбург, Сибирский тракт, 7-й километр, 1142</p>
+                    <p>Ежедневно 9:00 - 21:00</p>
+                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                </div>
+                <!-- <div class="footer__col">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#form">форма</a></li>
+                        <li><a href="#">Ремонт двигателя</a></li>
+                        <li><a href="#">Шиномонтаж</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <span class="close" data-close>&times;</span>
+            <h2>Запись на сервис</h2>
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <select>
+                    <option value="">Выберите услугу</option>
+                    <option value="diagnostic">Диагностика</option>
+                    <option value="engine">Ремонт двигателя</option>
+                </select>
+                <button type="submit" class="btn">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
