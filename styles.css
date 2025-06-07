@@ -174,13 +174,13 @@ h2 {
     background: white;
     height: 150px;
     border-radius: 8px;
-    padding: 10px;
+    padding: px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 .service-card img {
-    width: 60px;
-    height: 60px;
+    width: 600px;
+    height: 200px;
     margin-bottom: 15px;
 }
 .service-child-card img {
