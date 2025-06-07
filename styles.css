@@ -80,6 +80,53 @@ img {
     text-decoration: none;
 }
 
+/* карусель */
+.carousel {  
+    position: relative;  
+    width: 100%;  
+    overflow: hidden;  
+}  
+.carousel-inner {  
+    display: flex;  
+    width: 300%;  
+    transition: transform 3s;  
+}  
+.carousel-item {  
+    flex: 1;  
+    text-align: center;  
+}  
+.carousel-item img {  
+    width: 100%;  
+    max-height: 400px;  
+    object-fit: cover;
+}  
+/*кнопки карусели*/
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: #0056b3;
+}
+
 /* Первый экран */
 .hero {
     padding: 120px 0 60px;
