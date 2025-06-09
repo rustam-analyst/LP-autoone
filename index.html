@@ -31,7 +31,7 @@
             <div class="hero__inner">
                 <div class="hero__content">
                     <h1>Профессиональный ремонт авто с гарантией</h1>
-                    <p class="subtitle">Быстро, качественно, дорого</p>
+                    <p class="subtitle">Мы осуществляем ремонт автомобилей после ДТП, предоставляем полный комплекс услуг. Ваша вера в нас — вот что для нас важнее всего. Мы всегда честны в своей оценке и работе.</p>
                     
                     <!-- <form class="booking-form" id="form">
                         <input type="text" placeholder="Ваше имя" required>
@@ -62,6 +62,7 @@
     </section>
 
     <!-- карусель -->
+    <section class="services">
     <div class="carousel">  
         <div class="carousel-inner">  
             <div class="carousel-item">  
@@ -80,32 +81,119 @@
                 <img src="resources/carousel/20250203_203900.jpg" alt="Image 5">
             </div>
         </div>
-        <button class="prev" onclick="goToPrevSlide()">Предыдущее изображение</button>
-        <button class="next" onclick="goToNextSlide()">Следующее изображение</button>  
-    </div>  
+        <button class="prev" onclick="goToPrevSlide()"></button>
+        <button class="next" onclick="goToNextSlide()"></button>  
+    </div>
+    </section>  
 
+ 
+    
 
-    <!-- Услуги -->
+     <!-- Услуги -->
     <section class="services">
         <div class="container">
             <h2>Наши услуги</h2>
             <div class="services__grid">
                 <div class="service-card">
-                    <img src="resources/images/niva.jpg" alt="">
+                    <img src="resources/service-card/niva.svg" alt="">
                     <h3>Ремонт Нивы</h3>
-                    <p>Работы любой сложности</p>             
+                    <p>Работы любой сложности</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>ремонт нивы</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>
+                    
                 </div>
                 <div class="service-card">
-                    <img src="resources/images/DTP.jpg" alt="">
+                    <img src="resources/service-card/check.svg" alt="">
+                    <h3>Диагностика</h3>
+                    <p>Диагностика всех систем</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>Диагностируем оборудование</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>             
+                </div>
+                <div class="service-card">
+                    <img src="resources/service-card/thermometer.svg" alt="">
+                    <h3>Климат</h3>
+                    <p>Ремонт климатической системы</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>чиним кондиционеры</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>             
+                </div>
+                <div class="service-card">
+                    <img src="resources/service-card/electricity.svg" alt="">
+                    <h3>Автоэлектрика</h3>
+                    <p>Ремонт бортовой электроники</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>ремонтируем электронику</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>             
+                </div>
+                <div class="service-card">
+                    <img src="resources/service-card/check.svg" alt="">
+                    <h3>Подвеска</h3>
+                    <p>полный ремонт всей ходовки</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>ремонт всех типов подвески</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>             
+                </div>
+                <div class="service-card">
+                    <img src="resources/service-card/dtp.svg" alt="">
                     <h3>Восстановление после ДТП</h3>
                     <p>Под ключ с гарантией</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>восстановление геометрии кузова и работоспособности всех агрегатов</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="resources/images/clutch.jpg" alt="">
+                    <img src="resources/service-card/clutch.svg" alt="">
                     <h3>Ремонт трансмиссии</h3>
                     <p>Комплексная диагностика</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>замена сцепления, ремонт автоматической коробки</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>
                 </div>
-                <!-- Добавьте остальные услуги -->
+                <div class="service-card">
+                    <img src="resources/service-card/wash.svg" alt="">
+                    <h3>Автомойка</h3>
+                    <p>Чисто и бережно</p>
+                    <!-- попап -->
+                    <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
+                    <div id="overlay"></div>
+                    <div id="popupDialog">
+                        <p>мйока и химчистка</p>
+                        <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
+                    </div>
+                </div>
+               
+    <!-- раскрывающиеся карточки -->
+        <!--        
             </div>
             <div class="service-footer">
                 <div class="service-child-card">
@@ -132,6 +220,8 @@
                 </div>
             </div>
         </div>
+    -->
+   <!-- Радиобатоны   
         <fieldset>
             <legend>Select a drone:</legend>
           
@@ -150,6 +240,7 @@
               <label for="louie">3</label>
             </div>
           </fieldset>
+     --> 
     </section>
 
     <!-- Форма обратной связи -->
@@ -175,15 +266,6 @@
                     <p>Екатеринбург, Сибирский тракт, 7-й километр, 1142</p>
                     <p>Ежедневно 9:00 - 21:00</p>
                     <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                </div>
-                <!-- <div class="footer__col">
-                    <h3>Услуги</h3>
-                    <ul>
-                        <li><a href="#form">форма</a></li>
-                        <li><a href="#">Ремонт двигателя</a></li>
-                        <li><a href="#">Шиномонтаж</a></li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </footer>

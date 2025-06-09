@@ -46,7 +46,8 @@ function goToPrevSlide() {        // из-за setInterval мне нужно б�
 }  
 setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды  
 
-
+// форма обратной связи
+/*
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     form.style.display = 'none'; // hide the form immediately
@@ -62,4 +63,21 @@ form.addEventListener('submit', function(e) {
             form.style.display = 'block'; // show the form again in case of error
             sendingMessage.style.display = 'none'; // hide the sending message
         })
-})
+})*/
+// работа с попапами
+ function popupFn() {
+            document.getElementById(
+                "overlay"
+            ).style.display = "block";
+            document.getElementById(
+                "popupDialog"
+            ).style.display = "block";
+        }
+        function closeFn() {
+            document.getElementById(
+                "overlay"
+            ).style.display = "none";
+            document.getElementById(
+                "popupDialog"
+            ).style.display = "none";
+        }
