@@ -1,4 +1,5 @@
-/*/ Открытие/закрытие модального окна
+// пока убрал, т.к. нет формы обратной связи, как появится этот скрипт нужно будет вернуть
+/* Открытие/закрытие модального окна
 const modal = document.getElementById('modal');
 const openModalBtn = document.querySelector('[data-open-modal]');
 const closeModalBtn = document.querySelector('[data-close]');
