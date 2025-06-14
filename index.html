@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис "AvtoOne" | Ремонт авто в Екатеринбурге</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="resources/images/лого.png" alt="" width="60" height="60">
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+                    <!--    
+                    <button type="button" class="btn btn--small" data-open-modal>Записаться</button>
+                    -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <h1>Профессиональный ремонт авто с гарантией</h1>
+                    <p class="subtitle">Мы осуществляем ремонт автомобилей после ДТП, предоставляем полный комплекс услуг. Ваша вера в нас — вот что для нас важнее всего. Мы всегда честны в своей оценке и работе.</p>
+                    
+                    <!-- <form class="booking-form" id="form">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Ваш телефон" required>
+                        <button type="submit" class="btn">Оставить заявку</button>
+                    </form> -->
+
+                    <!-- <div class="features">
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Бесплатная диагностика</span>
+                        </div>
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Оригинальные запчасти</span>
+                        </div>
+                        <div class="feature">
+                            <img src="https://placehold.co/60x40" alt="">
+                            <span>Выездной ремонт</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="hero__image">
+                    <img src="resources/images/main.jpg" alt="Ремонт автомобиля">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- карусель -->
+    <section class="services">
+    <div class="carousel">  
+        <div class="carousel-inner">  
+            <div class="carousel-item">  
+                <img src="resources/carousel/20241214_145038.jpg" alt="Image 1">  
+            </div>  
+            <div class="carousel-item">  
+                <img src="resources/carousel/20250203_203838.jpg" alt="Image 2">  
+            </div>  
+            <div class="carousel-item">  
+                <img src="resources/carousel/20250203_203843.jpg" alt="Image 3">  
+            </div> 
+            <div class="carousel-item">
+                <img src="resources/carousel/20250203_203847.jpg" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/carousel/20250203_203900.jpg" alt="Image 5">
+            </div>
+        </div>
+        <button class="prev" onclick="goToPrevSlide()"></button>
+        <button class="next" onclick="goToNextSlide()"></button>  
+    </div>
+    </section>  
+
+ 
+    
+
+     <!-- Услуги -->
+    <section class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services__grid">
+
+                <article class="service-card">
+                    <img src="resources/service-card/niva.svg" alt="">
+                    <h3>Ремонт Нивы</h3>
+                    <p>Работы любой сложности</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-1']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-1" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Замена ступичного подшипника <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена рулевой трапеции <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена сцепления <br/>
+                                <b>Стоимость от 8000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена реактивных тяг <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена цепи <br/>
+                                <b>Стоимость от 5500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена кардана <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена генератора <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена стартера <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Ремонт выхлопа  <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Сварочный работы <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                    </ol>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+                <article class="service-card">
+                    <img src="resources/service-card/check.svg" alt="">
+                    <h3>Диагностика</h3>
+                    <p>Диагностика всех систем</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-2']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-2" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Компьютер диагностика проф.сканерами  <br/>
+                                <b>Стоимость от 900</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Эндоскопия <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Осмотр ходовой части <br/>
+                                <b>Стоимость от 300</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Диагностика форсунок <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Полная диагностика автомобиля <br/>
+                                <b>Стоимость от 4590</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Диагностика при продаже и покупке авто <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+               <article class="service-card">
+                    <img src="resources/service-card/thermometer.svg" alt="">
+                    <h3>Климат</h3>
+                    <p>Ремонт климатической системы</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-3']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-3" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Диагностика работоспособности кондиционера  <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Проверка на утечки <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Установка кондиционера <br/>
+                                <b>Стоимость от 3500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена радиаторов кондиционера <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Ремонт кондиционера <br/>
+                                <b>Стоимость от 3500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена испарителя кондиционера <br/>
+                                <b>Стоимость от 5000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Заправка кондиционера <br/>
+                                <b>Стоимость от 3500</b>
+                            </p>
+                        </li>                        
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>   
+                </dialog>
+
+               <article class="service-card">
+                    <img src="resources/service-card/to.svg" alt="">
+                    <h3>Техническое обслуживание</h3>
+                    <p>Ремонт автоэлектрики</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-4']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-4" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Замена масла в двс  <br/>
+                                <b>Стоимость от 900</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена масла в МКПП  <br/>
+                                <b>Стоимость от 900</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена масла в АКПП  <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена масла в редукторе <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена тормозной жидкости <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена жидкости ГУР <br/>
+                                <b>Стоимость от 800</b>
+                            </p>
+                        </li>
+                                                <li>
+                             <p>
+                                Замена воздушного фильтра <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                                                </li>
+                                                <li>
+                             <p>
+                                Замена салонного фильтра <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                                                </li>
+                                                <li>
+                             <p>
+                                Замена топливного фильтра <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+
+               <article class="service-card">
+                    <img src="resources/service-card/truck.svg" alt="">
+                    <h3>Подвеска</h3>
+                    <p>Ремонт ходовой</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-5']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-5" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Замена переднего амортизатора <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена заднего амортизатора <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>                        
+                        <li>
+                             <p>
+                                Замена ступичного подшипника <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Осмотр ходовой части <br/>
+                                <b>Стоимость от 300</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена рычага <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена рулевой тяги <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена рулевого наконечника <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                                                <li>
+                             <p>
+                                Замена стойки стабилизатора <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена втулки стабилизатора <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена сайлетблоков балки <br/>
+                                <b>Стоимость от 4500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена рейки <br/>
+                                <b>Стоимость от 3500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Развал-схождение<br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+               <article class="service-card">
+                    <img src="resources/service-card/DTP.svg" alt="">
+                    <h3>Восстановление после ДТП</h3>
+                    <p>Под ключ, с гарантией</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-6']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-6" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Осмотр <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Диагностика <br/>
+                                <b>Стоимость от 900</b>
+                            </p>
+                        </li>                        
+                        <li>
+                             <p>
+                                Консультация <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Эвакуатор <br/>
+                                <b>Стоимость от 3500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Кузовные работы <br/>
+                                <b>Стоимость от 8000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Технические работы <br/>
+                                <b>Стоимость от 3000</b>
+                            </p>
+                        </li>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+               <article class="service-card">
+                    <img src="resources/service-card/clutch.svg" alt="">
+                    <h3>Ремонт тормозной системы</h3>
+                    <p>Обслуживание и ремонт</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-7']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-7" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Замена тормозных колодок - перед <br/>
+                                <b>Стоимость от 700</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена тормозных колодок - зад <br/>
+                                <b>Стоимость от 900</b>
+                            </p>
+                        </li>                        
+                        <li>
+                             <p>
+                                Замена тормозных колодок электрического ручника <br/>
+                                <b>Стоимость от 1200</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена колодок барабана  <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Замена тормозного диска <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+               <article class="service-card">
+                    <img src="resources/service-card/wash.svg" alt="">
+                    <h3>Автомойка</h3>
+                    <p>Автомойка и химчистка</p>
+                    <div class="service-card__footer">
+                        <button class="btn btn--small" onclick="window['dialog-8']?.showModal()">Открыть</button> 
+                    </div>
+                </article>
+                <dialog class="dialog" id="dialog-8" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Мойка кузова <br/>
+                                <b>Стоимость от 500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Мойка салона <br/>
+                                <b>Стоимость от 700</b>
+                            </p>
+                        </li>                        
+                        <li>
+                             <p>
+                                Комплексная мойка <br/>
+                                <b>Стоимость от 1000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Химчистка <br/>
+                                <b>Стоимость от 3000</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Полировка фар <br/>
+                                <b>Стоимость от 1500</b>
+                            </p>
+                        </li>
+                        <li>
+                             <p>
+                                Полировка кузова <br/>
+                                <b>Стоимость от 4500</b>
+                            </p>
+                        </li>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
+                    
+                </dialog>
+
+    <!-- раскрывающиеся карточки -->
+        <!--        
+            </div>
+            <div class="service-footer">
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена ремня грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена цепи грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Замена грм</h3>
+                </div>
+                <div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Дешевое масло</h3>
+                </div><div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Дорогое масло</h3>
+                </div><div class="service-child-card">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <h3>Подсолнечное</h3>
+                </div>
+            </div>
+        </div>
+    -->
+   <!-- Радиобатоны   
+        <fieldset>
+            <legend>Select a drone:</legend>
+          
+            <div>
+              <input type="radio" id="huey" name="drone" value="huey" checked />
+              <label for="huey">1</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="dewey" name="drone" value="dewey" />
+              <label for="dewey">2</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="louie" name="drone" value="louie" />
+              <label for="louie">3</label>
+            </div>
+          </fieldset>
+     --> 
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__inner">
+                <h2>Позвоните нам и мы поможем вам с любым вопросом!</h2>
+                <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+                <!--
+                <form class="cta-form">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <button type="submit" class="btn">Жду звонка</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h3>Контакты</h3>
+                    <p>Екатеринбург, Сибирский тракт, 7-й километр, 1142</p>
+                    <p>Ежедневно 9:00 - 21:00</p>
+                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <span class="close" data-close>&times;</span>
+            <h2>Запись на сервис</h2>
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <select>
+                    <option value="">Выберите услугу</option>
+                    <option value="diagnostic">Диагностика</option>
+                    <option value="engine">Ремонт двигателя</option>
+                </select>
+                <button type="submit" class="btn">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
