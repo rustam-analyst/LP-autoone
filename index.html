@@ -98,14 +98,41 @@
                     <img src="resources/service-card/niva.svg" alt="">
                     <h3>Ремонт Нивы</h3>
                     <p>Работы любой сложности</p>
-                    <!-- попап -->
+                    <!-- попап 
                     <button class= "btn btn--small" onclick="popupFn()">Подробнее</button>
                     <div id="overlay"></div>
                     <div id="popupDialog">
                         <p>ремонт нивы</p>
                         <button class= "btn btn--small" onclick="closeFn()">Закрыть</button>
                     </div>
+                -->
+                <button class="btn btn--small" onclick="window['dialog-1']?.showModal()">Открыть</button> 
+
+                <dialog class="dialog" id="dialog-1" role="dialog">
+                    <ol class="dialog-list">
+                        <li>
+                            <p>
+                                Замена ступичного подшипника <br/>
+                                <b>Стоимость от 2000</b>
+                            </p>
+                        </li>
+                        <li>Замена рулевой трапецы <b>от 2000</b></li>
+                        <li>Замена сцепления <b>от 8000</b></li>
+                        <li>Замена реактивных тяг <b>от 2000</b></li>
+                        <li>Замена цепи <b>от 5500</b></li>
+                        <li>Замена кардана <b>от 1500</b></li>
+                        <li>Замена генератора <b>от 1000</b></li>
+                        <li>Замена стартера <b>от 1000</b></li>
+                        <li>Ремонт выхлопа <b>от 1000</b></li>
+                        <li>Сварочный работы <b>от 1000</b></li>
+                    </ol>
+                
+                    <form method="dialog">
+                        <button class="btn btn--small" type="submit" aria-label="Закрыть"> X </button>
+                    </form>
                     
+                </dialog>
+
                 </div>
                 <div class="service-card">
                     <img src="resources/service-card/check.svg" alt="">
